@@ -9,4 +9,13 @@ sudo apt install tmux -y
 sudo apt install ranger -y
 
 
-# Install neovim
+## --- ADDITIONAL SCRIPTS ---
+Path="${HOME}/scripts/more"
+
+# Setup crontab file
+sudo touch /var/spool/cron/${USER}
+
+
+# Setup my dotfiles condigurations
+sh ${Path}/dotfiles.sh
+sh ${Path}/nvim.sh
