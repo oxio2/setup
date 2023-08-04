@@ -5,7 +5,13 @@ sudo sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > 
 sudo apt update
 sudo apt install php8.2
 
-sudo apt install composer
+sudo apt install apache2 php libapache2-mod-php libmcrypt4 php-mcrypt php-mysql php-cli libapache2-mod-php php-common php-xml php-gd php-mbstring php-tokenizer php-json php-bcmath php-zip unzip php-curl
 
-# Install laravel too
-composer global require laravel/installer
+# Install composer
+sudo apt install curl php-cli php-mbstring git unzip
+cd ~
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+# Install laravel tookkk
+#composer global require laravel/installer
