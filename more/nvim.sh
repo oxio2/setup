@@ -9,6 +9,5 @@ sudo make CMAKE_INSTALL_PREFIX=Release
 sudo make install
 mv build/bin/nvim ${HOME}/.local/bin/nvim
 cd  ..
-sudo rm neovim -r
 
 

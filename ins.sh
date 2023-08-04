@@ -8,6 +8,13 @@ sudo apt install tmux -y
 
 sudo apt install ranger -y
 
+sudo apt install kitty -y
+
+# i3 and dependencies
+sudo apt install i3 -y
+sudo apt install suckless-tools -y
+sudo apt install i3blocks -y
+
 
 ## --- ADDITIONAL SCRIPTS ---
 Path="${HOME}/scripts/more"
