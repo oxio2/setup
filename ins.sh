@@ -10,12 +10,14 @@ sudo apt install ranger -y
 
 sudo apt install kitty -y
 
+sudo apt install python3-pip
+
 # i3 and dependencies
 sudo apt install i3 -y
 sudo apt install suckless-tools -y
 sudo apt install i3blocks -y
-
 sudo apt install maim
+sudo apt install copyq
 
 
 ## --- ADDITIONAL SCRIPTS ---
@@ -24,7 +26,10 @@ Path="${HOME}/scripts/more"
 # Setup crontab file
 sudo touch /var/spool/cron/${USER}
 
+cd ${Path}
 
-# Setup my dotfiles condigurations
-sh ${Path}/dotfiles.sh
-sh ${Path}/nvim.sh
+for f in *.sh; do
+  bash "$f" || break  # execute successfully or break
+  # Or more explicitly: if this execution fails, then stop the `for`:
+  # if ! bash "$f"; then break; fi
+done
