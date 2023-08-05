@@ -16,12 +16,12 @@ sudo apt install python3-pip
 sudo apt install i3 -y
 sudo apt install suckless-tools -y
 sudo apt install i3blocks -y
-sudo apt install maim
-sudo apt install copyq
+sudo apt install maim -y
+sudo apt install copyq -y
 
 
 ## --- ADDITIONAL SCRIPTS ---
-Path="${HOME}/scripts/more"
+Path="~/setup/more"
 
 # Setup crontab file
 sudo touch /var/spool/cron/${USER}
