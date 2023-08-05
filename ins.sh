@@ -15,6 +15,8 @@ sudo apt install i3 -y
 sudo apt install suckless-tools -y
 sudo apt install i3blocks -y
 
+sudo apt install maim
+
 
 ## --- ADDITIONAL SCRIPTS ---
 Path="${HOME}/scripts/more"
