@@ -19,17 +19,18 @@ sudo apt install i3blocks -y
 sudo apt install maim -y
 sudo apt install copyq -y
 
-
-## --- ADDITIONAL SCRIPTS ---
-Path="~/setup/more"
+sudo apt install xdotool -y
 
 # Setup crontab file
 sudo touch /var/spool/cron/${USER}
 
+## --- ADDITIONAL SCRIPTS ---
+Path="~/setup/more"
+
 cd ${Path}
 
 for f in *.sh; do
-  bash "$f" || break  # execute successfully or break
-  # Or more explicitly: if this execution fails, then stop the `for`:
-  # if ! bash "$f"; then break; fi
+	bash "$f" || break # execute successfully or break
+	# Or more explicitly: if this execution fails, then stop the `for`:
+	# if ! bash "$f"; then break; fi
 done
