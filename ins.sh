@@ -20,6 +20,7 @@ sudo apt install maim -y
 sudo apt install copyq -y
 
 sudo apt install xdotool -y
+sudo apt install feh -y
 
 # Setup crontab file
 sudo touch /var/spool/cron/${USER}
